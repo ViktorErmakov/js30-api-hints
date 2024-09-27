@@ -1,3 +1,4 @@
+
 html {
     font-size: 10px;
     scroll-behavior: smooth;
@@ -16,6 +17,60 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 120rem;
+    width: 100%;
+}
+
+.search {
+    width: 100%;
+    height: 100%;
+    height: 8rem;
+    padding: 1rem;
+}
+
+form {
+    width: 100%;
+    display: flex;
+}
+
+input::-webkit-input-placeholder {
+    color: #B6C0A5;
+    font-style: italic;
+    background: #E0EFCA;
+}
+
+input {
+    display: flex;
+    width: 100%;
+    padding-left: 10px;
+    color: #222;
+    border: 2px solid #7BA7AB;
+    border-radius: 5px 0 0 5px;
+    outline: none;
+    background: #F9F0DA;
+}
+
+form button {
+    width: 10rem;
+    min-height: 5rem;
+    border: none;
+    background: #7BA7AB;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+}
+
+form button::before {
+    content: "\f002";
+    font-family: FontAwesome;
+    font-size: 16px;
+    color: #F9F0DA;
 }
 
 .gallery {
@@ -53,35 +108,34 @@ footer {
     justify-content: space-between;
     width: 100%;
     top: 85vh;
-    padding-left: 1rem;
-    padding-right: 1rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
     opacity: .3;
-  }
+}
 
-  .logo {
+.logo {
     display: flex;
     width: 8rem;
     height: 8rem;
-    
-  }
 
-  .logo:hover {
+}
+
+.logo:hover {
     scale: 1.2;
     transition: all 1s;
-  }
+}
 
-  .years {
+.years {
     font-size: 5rem;
-    /* color: white; */
-  }
+}
 
-  .github {
+.github {
     display: flex;
     width: 8rem;
     height: 8rem;
-  }
+}
 
-  .github:hover {
+.github:hover {
     scale: 1.2;
     transition: all 1s;
-  }
+}
