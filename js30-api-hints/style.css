@@ -1,0 +1,87 @@
+html {
+    font-size: 10px;
+    scroll-behavior: smooth;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    width: 100%;
+    min-height: 100vh;
+    background-color: #222222c9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.gallery {
+    max-width: 120rem;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.gallery a {
+    flex: 1 1 35rem;
+    height: 25rem;
+    margin: 1rem;
+    border-radius: .5rem;
+    border: .2rem solid #fff;
+    box-shadow: 0 .4rem 1.6rem rgba(0, 0, 0, .8);
+    overflow: hidden;
+    transform: .3s;
+    cursor: pointer;
+}
+
+.gallery a img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.gallery img:hover {
+    transform: scale(1.1);
+}
+
+footer {
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    top: 85vh;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    opacity: .3;
+  }
+
+  .logo {
+    display: flex;
+    width: 8rem;
+    height: 8rem;
+    
+  }
+
+  .logo:hover {
+    scale: 1.2;
+    transition: all 1s;
+  }
+
+  .years {
+    font-size: 5rem;
+    /* color: white; */
+  }
+
+  .github {
+    display: flex;
+    width: 8rem;
+    height: 8rem;
+  }
+
+  .github:hover {
+    scale: 1.2;
+    transition: all 1s;
+  }
