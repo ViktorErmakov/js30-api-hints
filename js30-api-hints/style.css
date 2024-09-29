@@ -12,7 +12,7 @@ html {
 
 body {
     width: 100%;
-    min-height: 100vh;
+    /* min-height: 100vh; */
     background-color: #222222c9;
     display: flex;
     justify-content: center;
@@ -26,9 +26,10 @@ header {
     align-items: center;
     max-width: 120rem;
     width: 100%;
+    /* margin-top: 5rem; */
 }
 
-.search {
+.search_wrapper {
     width: 100%;
     height: 100%;
     height: 8rem;
@@ -43,7 +44,7 @@ form {
 input::-webkit-input-placeholder {
     color: #B6C0A5;
     font-style: italic;
-    background: #E0EFCA;
+    /* background: #E0EFCA; */
 }
 
 input {
@@ -55,6 +56,10 @@ input {
     border-radius: 5px 0 0 5px;
     outline: none;
     background: #F9F0DA;
+}
+
+.counts {
+    max-width: 14rem;
 }
 
 form button {
@@ -75,6 +80,9 @@ form button::before {
 
 .gallery {
     max-width: 120rem;
+    width: 100%;
+    min-height: 81rem;
+    height: 100%;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
@@ -106,6 +114,7 @@ footer {
     position: fixed;
     display: flex;
     justify-content: space-between;
+    align-items: center;
     width: 100%;
     top: 85vh;
     padding-left: 2rem;
@@ -138,4 +147,15 @@ footer {
 .github:hover {
     scale: 1.2;
     transition: all 1s;
+}
+
+.right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column-reverse;
+}
+
+.github img{
+    width: 100%;
 }

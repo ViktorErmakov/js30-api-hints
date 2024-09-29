@@ -12,53 +12,28 @@
 <body>
 
     <header>
-        <div class="search">
+        <div class="search_wrapper">
             <form action="" method="get">
-                <input name="search" placeholder="Искать здесь..." type="search">
-                <button type="submit"></button>
+                <input class="search" placeholder="Искать здесь..." type="search" autocomplete="off" autofocus>
+                <input class="counts" type="text" placeholder="Кол-во элементов" autocomplete="off">
+                <button class="btn" type="submit" accesskey='enter'></button>
             </form>
         </div>
     </header>
 
     <section class="gallery">
 
-        <a href="">
-            <img src="assets/img/RukiVverh_2.jpeg" alt="picture">
-        </a>
-        <a href="">
-            <img src="assets/img/dontstartnow.png" alt="picture">
-        </a>
-        <a href="">
-            <img src="assets/img/RukiVverh_1.jpeg" alt="picture">
-        </a>
-        <a href="">
-            <img src="assets/img/RukiVverh_2.jpeg" alt="picture">
-        </a>
-        <a href="">
-            <img src="assets/img/dontstartnow.png" alt="picture">
-        </a>
-        <a href="">
-            <img src="assets/img/RukiVverh_1.jpeg" alt="picture">
-        </a>
-        <a href="">
-            <img src="assets/img/RukiVverh_2.jpeg" alt="picture">
-        </a>
-        <a href="">
-            <img src="assets/img/dontstartnow.png" alt="picture">
-        </a>
-        <a href="">
-            <img src="assets/img/RukiVverh_1.jpeg" alt="picture">
-        </a>
-
     </section>
     <footer>
         <a class="logo" href="https://rs.school/courses/javascript-preschool-ru">
             <img src="assets/svg/rss-logo.svg" alt="logo">
         </a>
-        <span class="years">©2024</span>
-        <a class="github" href="https://github.com/ViktorErmakov">
-            <img src="assets/svg/github.png" alt="github">
-        </a>
+        <div class="right">
+            <span class="years">©2024</span>
+            <a class="github" href="https://github.com/ViktorErmakov">
+                <img src="assets/svg/github.png" alt="github">
+            </a>
+        </div>
     </footer>
     <script src="script.js"></script>
 </body>
