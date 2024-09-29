@@ -1,1 +1,1 @@
-# js30-api-hints
+https://viktorermakov.github.io/js30-api-hints/js30-api-hints
